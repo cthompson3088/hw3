@@ -1,0 +1,9 @@
+<h1>Places I've Been</h1>
+ 
+<ul>
+  <% for element in @places %>
+    <li>
+      <a href="/places/<%=element["id"]%>"> <%= element["name"] %>
+    </li>
+  <% end %>
+</ul>

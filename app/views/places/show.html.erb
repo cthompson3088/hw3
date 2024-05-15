@@ -4,9 +4,10 @@
 
 <ul>
   <% for entry in @entries %>
-    <p><%=entry["title"] %> </p>
-    <p><%=entry["posted_on"] %> </p>
+    <h2> <%=entry["title"] %> </h2>
+    <h3><%=entry["posted_on"] %> </h3>
     <p><%=entry["description"] %> </p>
+    <br>
   <% end %>
 </ul>
 

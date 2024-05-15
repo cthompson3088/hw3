@@ -1,5 +1,14 @@
 class EntriesController < ApplicationController
 
+  def index
+    redirect_to "/places"
+  end
+  
+  def show
+    redirect_to "/places"
+  end
+
+
   def new
     @place = Place.find_by({"id" => params["place_id"]})
   end
